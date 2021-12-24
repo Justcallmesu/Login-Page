@@ -156,6 +156,7 @@ document.querySelector(".sign-in-button").addEventListener('click', function (e)
         if (accepted === 3) {
             user.push({ email: email.value, password: password.value })
             localStorage.setItem("user", JSON.stringify(user))
+            window.location.href = "index.html"
         }
     }
     email.value = "";
