@@ -135,14 +135,14 @@ document.querySelector(".login").addEventListener('click', function (e) {
                 window.location.href = "https://youtu.be/dQw4w9WgXcQ"
                 none = false;
                 break;
+            } else {
+                none = true;
             }
         }
     } else if (email.value === "" && password.value === "") {
         errorView("Input must filled")
         wrong(true, true);
         none = false;
-    } else {
-        none = true;
     }
     if (none) {
         errorView("Email or Password you entered wrong");
