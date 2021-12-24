@@ -185,6 +185,7 @@ h3.author {
 }
 @media (max-width: 992px) {
   body {
+    height: 1200px;
     flex-direction: column;
     overflow-y: scroll;
   }
