@@ -100,7 +100,7 @@ email.addEventListener("change", function () {
 // Password Checker
 password.addEventListener("change", function () {
     if (password.value.match(passwordRegex)) {
-        if (password.value.length < 6) {
+        if (password.value.length < 5) {
             errorView("Password Length Must 5 or more char")
             wrong(false, true);
             password.value = "";
